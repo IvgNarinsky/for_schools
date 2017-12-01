@@ -1,0 +1,62 @@
+<html>
+<head>
+    <script>
+        var schools=[ 
+        {
+          school:'Ort',
+          students:[
+              {
+              firstname: 'ivgeny',
+              lastname: 'narinsky',
+              average: 100
+              },
+              {
+              firstname: 'Einav',
+              lastname: 'bublik',
+              average: 99
+              },
+               {
+              firstname: 'daniel',
+              lastname: 'weedman',
+              average: 95
+              }
+            ]
+          },
+            
+              {
+              school:'college of management',
+              students:[
+              {
+              firstname: 'itamar',
+              lastname: 'priel',
+              average: 85
+          },
+        {
+              firstname: 'matan',
+              lastname: 'midgal',
+              average: 90
+          },
+               {
+              firstname: 'zvika',
+              lastname: 'naor',
+              average: 40}
+            ]}
+        ];
+        
+                for(var i = 0; i<schools.length; i++)
+                {
+                alert(schools[i].school)
+                    for (var j = 0;j < schools[i].students.length; j++)
+                  {
+                  var message=schools[i].students[j].firstname+' '+
+                  schools[i].students[j].lastname;
+                  message=message+' has an avarage of ' +  schools[i].students[j].average
+                      
+                      alert(message);
+
+                    }
+              }
+           
+    </script>              
+    </head>              
+    </html>
